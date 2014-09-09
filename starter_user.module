@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Code for the Starter: User feature.
+ */
+
+include_once 'starter_user.features.inc';
+
+/**
+ * Process variables for page.tpl.php.
+ */
+function starter_user_process_page(&$variables) {
+  $entity = menu_get_object('user', 1);
+
+  if ($entity) {
+    $settings = variable_get('title_user', array());
+    if (!empty($settings['hide_label']['page'])) {
+      $variables['title'] = FALSE;
+    }
+  }
+}
