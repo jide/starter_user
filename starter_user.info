@@ -7,7 +7,6 @@ project = starter_user
 dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = field_group
-dependencies[] = realname
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ds_layout_settings][] = user|user|default
